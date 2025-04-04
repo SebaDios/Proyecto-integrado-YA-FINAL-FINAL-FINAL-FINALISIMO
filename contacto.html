@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Contacto | Antojitos ALKASE</title>
+    <link rel="icon" type="image/png" href="faviconMed.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <header>
+        <div class="header-text">
+            <h1>Antojitos ALKASE</h1>
+            <p class="slogan">El auténtico sazón de Sinaloa hasta tu mesa</p>
+        </div>
+        <img src="Logo.png" alt="Logo de Antojitos ALKASE" class="logo">
+    </header>
+    
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" class="active">Sugerencias/Ubicación</a></li>
+        </ul>
+    </nav>
+    
+    <main class="contact-container">
+        <section class="contact-hero">
+            <h2>¡Estamos para servirte!</h2>
+            <p class="hero-subtitle">Contáctanos para reservaciones, pedidos o cualquier duda que tengas</p>
+        </section>
+        
+        <div class="contact-grid">
+            <section class="contact-form-section">
+                <h3>Envíanos un mensaje</h3>
+                <div class="form-container">
+                    <form id="contact-form" action="enviar.php" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (opcional)</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="618 123 4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="queja">Queja o reclamo</option>
+                                <option value="reservacion">Reservación</option>
+                                <option value="pedido">Pedido especial</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="contact-info-section">
+                <div class="info-card">
+                    <h3>Información de contacto</h3>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Dirección</h4>
+                            <p>Madreselva 146, Jardines de Durango, 34200 Durango, Dgo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+526185076123">618 507 6123</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Correo electrónico</h4>
+                            <p><a href="mailto:contacto@antojitosalkase.com">contacto@antojitosalkase.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Horario de atención</h4>
+                            <p>Lunes a Viernes: 10:00 AM - 8:00 PM</p>
+                            <p>Sábado y Domingo: 9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-card">
+                    <h3>Síguenos en redes</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1BWc8c3i2p/?mibextid=wwXIfr" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://wa.me/526185076123" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <section class="map-section">
+            <h3>Ubicación</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.6186486033484!2d-104.63713432397083!3d24.044509477420483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb7b60f1c2053%3A0x618d928d4b30a2b3!2sMadreselva%20146%2C%20Jardines%20de%20Durango%2C%2034200%20Durango%2C%20Dgo.!5e0!3m2!1ses!2smx!4v1742796221691!5m2!1ses!2smx" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Mapa de ubicación de Antojitos ALKASE">
+                </iframe>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <h3>¿Listo para disfrutar de nuestros antojitos?</h3>
+            <p>Haz tu pedido ahora o visítanos en nuestro local</p>
+            <div class="cta-buttons">
+                <a href="tel:+526185076123" class="cta-btn phone-btn">
+                    <i class="fas fa-phone-alt"></i> Llamar ahora
+                </a>
+                <a href="https://wa.me/526185076123" class="cta-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+                <a href="menu.html" class="cta-btn menu-btn">
+                    <i class="fas fa-utensils"></i> Ver menú
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Antojitos ALKASE</h3>
+                <p>El auténtico sazón de Sinaloa hasta tu mesa desde 2020.</p>
+                <div class="contact">
+                    <span><i class="fas fa-map-marker-alt"></i> Madreselva 146, Jardines de Durango</span>
+                    <span><i class="fas fa-phone"></i> Teléfono: (618) 507-6123</span>
+                    <span><i class="fas fa-envelope"></i> Email: contacto@antojitosalkase.com</span>
+                </div>
+            </div>
+            
+            <div class="footer-section hours">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 10:00 AM - 8:00 PM</p>
+                <p>Sábado y Domingo: 9:00 AM - 9:00 PM</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Antojitos ALKASE. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1BWc8c3i2p/?mibextid=wwXIfr" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/526185076123" target="_blank" aria-label="WhatsApp" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="contacto.js"></script>
+</body>
+</html>
